@@ -1,0 +1,28 @@
+@import '/src/styles/variables';
+@import '/src/styles/base';
+
+.rules-btn {
+    text-align: center;
+    
+    button {
+        font-weight: 500;
+        font-size: 1.1em;
+        padding: .7rem 2.8rem;
+        background: none;
+        color: #fff;
+        border: 2px solid $Header-Outline;
+        border-radius: $border-radius;
+        letter-spacing: 1.6px;
+        cursor: pointer;
+        scale: 1;
+        box-shadow: none;
+        transition: $transition;
+
+        &:hover {
+            scale: 1.05;
+            box-shadow: 1px 2px 3px $Header-Outline;
+        }
+    }
+
+}
+

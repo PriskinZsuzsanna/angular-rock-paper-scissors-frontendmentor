@@ -1,0 +1,28 @@
+<div class="result-section">
+
+    <div class="choises">
+        <div>
+            <div  class="circle player-choise"
+            [ngClass]="{'paper': this.service.picked == 'paper', 'scissors': this.service.picked == 'scissors', 'rock': this.service.picked == 'rock', 'winner': this.service.result == 'You Win!'}"
+           >
+                <img src="assets/images/icon-{{this.service.picked}}.svg" alt="">
+            </div>
+            <p>You Picked</p>
+        </div>
+        <div>
+            <div class="circle computer-choise"
+            [ngClass]="{'paper': this.service.housePick == 'paper', 'scissors': this.service.housePick == 'scissors', 'rock': this.service.housePick == 'rock', 'winner': this.service.result == 'You Lose!'}"
+           >
+                <img src="assets/images/icon-{{this.service.housePick}}.svg" alt="">
+            </div>
+            <p>The House Picked</p>
+        </div>
+    </div>
+
+    <div *ngIf="this.service.result"  class="result">
+        <h2>{{this.service.result}}</h2>
+        <button (click)="this.service.playAgain()">Play Again</button>
+    </div>
+
+
+</div>

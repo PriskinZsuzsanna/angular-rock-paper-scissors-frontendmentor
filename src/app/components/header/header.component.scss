@@ -1,0 +1,41 @@
+@import '/src/styles/variables';
+@import '/src/styles/base';
+
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    border: 3px solid $Header-Outline;
+    border-radius: $border-radius;
+
+    .logo {
+        width: 40%;
+        scale: .7;
+    }
+
+    .score {
+        scale: .8;
+        background: #fff;
+        min-width: 32%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: calc($border-radius / 2) ;
+
+        &-text{
+            color: $Score-Text;
+            margin-bottom: -.2rem;
+            font-weight: 600;
+        }
+
+        &-number {
+           color: $Dark-Text;
+           font-size: 3rem;
+           font-weight: 700;
+           margin-top: -.2rem;
+        }
+    }
+}

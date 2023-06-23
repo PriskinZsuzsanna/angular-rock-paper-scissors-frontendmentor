@@ -1,0 +1,43 @@
+@import '/src/styles/variables';
+@import '/src/styles/base';
+
+.pick-section {
+    width: 60%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    scale: .8;
+
+
+    .circle {
+        position: absolute;
+        scale: 1.2;
+        width: 7.6rem;
+        height: 7.6rem;
+        border-radius: 50%;
+        padding: 1.3rem;
+        background: #fff;
+        &.paper {
+            top: 0;
+            left: -30%;
+            translate: 0 -50%;
+            border: .8rem solid $Paper-Blue;
+            box-shadow: .5px 7.5px 1px $Paper-Dark-Blue;
+        }
+        &.scissors {
+            top: 0;
+            right: -30%;
+            translate: 0 -50%;
+            border: .8rem solid $Scissors-Yellow; 
+            box-shadow: .5px 7.5px 1px  $Scissors-Dark-Yellow;
+        }
+        &.rock {
+            bottom: 0;
+            translate: 0 50%;
+            border: .8rem solid $Rock-Red;
+            box-shadow: .5px 7.5px 1px $Rock-Dark-Red;
+        }
+    }
+}

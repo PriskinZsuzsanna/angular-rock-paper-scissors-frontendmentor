@@ -1,0 +1,104 @@
+@import '/src/styles/variables';
+@import '/src/styles/base';
+
+.result-section {
+    width: 90%;
+    margin-inline: auto;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+    .choises {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .circle {
+            width: 7.6rem;
+            height: 7.6rem;
+            border-radius: 50%;
+            padding: 1.3rem;
+            background: #fff;
+
+            &.paper {
+                border: .8rem solid $Paper-Blue;
+                box-shadow: .5px 7.5px 1px $Paper-Dark-Blue;
+            }
+
+            &.scissors {
+                border: .8rem solid $Scissors-Yellow;
+                box-shadow: .5px 7.5px 1px $Scissors-Dark-Yellow;
+            }
+
+            &.rock {
+                border: .8rem solid $Rock-Red;
+                box-shadow: .5px 7.5px 1px $Rock-Dark-Red;
+            }
+        }
+
+        .circle.computer-choise {
+            background: $Radial-Gradient;
+
+            &.paper,
+            &.scissors,
+            &.rock {
+                background: #fff;
+            }
+        }
+
+        .circle.winner {
+            position: relative;
+            z-index: 2;
+
+            &::after{
+                content: '';
+                position: absolute;
+                inset: -2rem;
+                border-radius: 50%;
+                border: 2rem solid #ffffff09;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                inset: -4rem;
+                border-radius: 50%;
+                border: 4rem solid  #ffffff09;
+            }
+        }
+
+        p {
+            text-align: center;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+        }
+
+    }
+
+    .result {
+        opacity: 1;
+        padding-block: 2rem;
+        text-align: center;
+        h2 {
+            text-transform: uppercase;
+            font-size: 4rem;
+        }
+
+        button {
+            text-transform: uppercase;
+            background: #fff;
+            color: $Dark-Text;
+            border-radius: $border-radius;
+            letter-spacing: 1.4px;
+            padding: .8rem 4rem;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: .8rem;
+        }
+    }
+
+
+
+}
