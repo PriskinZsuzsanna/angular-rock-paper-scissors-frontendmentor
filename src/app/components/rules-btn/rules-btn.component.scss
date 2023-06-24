@@ -4,6 +4,10 @@
 .rules-btn {
     text-align: center;
 
+    @media screen and (min-width: 420px) {
+        margin-top: 2rem;
+    }
+
     @media screen and (min-width: 720px){
         text-align: right;
     }

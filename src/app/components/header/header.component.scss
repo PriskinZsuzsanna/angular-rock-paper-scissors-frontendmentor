@@ -12,15 +12,19 @@
     border: 3px solid $Header-Outline;
     border-radius: $border-radius;
 
-    @media screen and (min-width: 700px){
-       padding: 2rem;
+    @media screen and (min-width: 420px) {
+        margin-bottom: 2rem;
+    }
+
+    @media screen and (min-width: 700px) {
+        padding: 2rem;
     }
 
     .logo {
         width: 40%;
         scale: .7;
 
-        @media screen and (min-width: 700px){
+        @media screen and (min-width: 700px) {
             scale: .9;
         }
     }
@@ -33,26 +37,26 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: calc($border-radius / 2) ;
+        border-radius: calc($border-radius / 2);
         padding-inline: .5rem;
-        
-        @media screen and (min-width: 700px){
+
+        @media screen and (min-width: 700px) {
             scale: 1;
             min-width: 0;
             padding-inline: 1rem;
         }
 
-        &-text{
+        &-text {
             color: $Score-Text;
             margin-bottom: -.2rem;
             font-weight: 600;
         }
 
         &-number {
-           color: $Dark-Text;
-           font-size: 3rem;
-           font-weight: 700;
-           margin-top: -.2rem;
+            color: $Dark-Text;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-top: -.2rem;
         }
 
     }

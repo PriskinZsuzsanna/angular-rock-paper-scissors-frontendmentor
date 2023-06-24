@@ -52,23 +52,24 @@
 
             &.paper {
                 border: .8rem solid $Paper-Blue;
-                box-shadow: .5px 7.5px 1px $Paper-Dark-Blue;
+                box-shadow: .5px 7.5px 1px  #2e4ce2, inset 2px 7px 1px  #dddef6;
             }
 
             &.scissors {
                 border: .8rem solid $Scissors-Yellow;
-                box-shadow: .5px 7.5px 1px $Scissors-Dark-Yellow;
+                box-shadow: .1px 7.5px 1px#c17f04, inset 2px 7px 1px  #dddef6;
             }
 
             &.rock {
                 border: .8rem solid $Rock-Red;
-                box-shadow: .5px 7.5px 1px $Rock-Dark-Red;
+                box-shadow: .5px 7.5px 1px  #cd0429, inset 2px 7px 1px  #dddef6;
             }
         }
 
         .choise {
             display: flex;
             flex-direction: column;
+            align-items: center;
             @media screen and (min-width: 1020px){
              flex-direction: column-reverse;
             }
