@@ -122,28 +122,6 @@
         }
     }
 
-    /*.text {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        gap: 1rem;
-
-        @media screen and (min-width: 1020px){
-            justify-content: space-evenly;
-        }
-        p {
-            width: 50%;
-            text-align: center;
-            margin-top: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
-
-            @media screen and (min-width: 1020px){
-                width: auto;
-            }
-        }
-    }*/
-
     .result,
     .result-desktop {
         animation: fadeIn .3s ease-in-out;
@@ -156,23 +134,6 @@
 
             @media screen and (min-width: 360px){
                 font-size: 4rem;
-            }
-        }
-
-        button {
-            text-transform: uppercase;
-            background: #fff;
-            color: $Dark-Text;
-            border-radius: $border-radius;
-            letter-spacing: 1.4px;
-            padding: .8rem 3rem;
-            font-weight: 700;
-            font-size: 1.1rem;
-            margin-top: .8rem;
-            cursor: pointer;
-
-            &:hover {
-                color: $Rock-Dark-Red
             }
         }
 

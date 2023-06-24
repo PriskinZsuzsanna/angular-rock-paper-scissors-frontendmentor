@@ -35,6 +35,23 @@ body {
             @media screen and (min-width: 1020px){
                 padding: 5% 10%;
             }
+
+            button {
+                text-transform: uppercase;
+                background: #fff;
+                color: $Dark-Text;
+                border-radius: $border-radius;
+                letter-spacing: 1.4px;
+                padding: .8rem 3rem;
+                font-weight: 700;
+                font-size: 1.1rem;
+                margin-top: .8rem;
+                cursor: pointer;
+        
+                &:hover {
+                    color: $Rock-Dark-Red
+                }
+            }
         }
 
         .container.rules {
@@ -49,4 +66,5 @@ body {
             }
         }
     }
+
 }
