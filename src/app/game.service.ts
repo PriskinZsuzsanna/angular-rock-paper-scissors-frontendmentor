@@ -12,13 +12,24 @@ export class GameService {
   result: string = "";
 
   isRules: boolean = false;
+  isFadeOut: boolean = false;
   isPicking: boolean = true;
   isResults: boolean = false;
 
   constructor() { }
 
   toggleRules(){
-    this.isRules = !this.isRules
+    this.isFadeOut = false
+
+    if(this.isRules == false){
+      this.isRules = true
+    } else 
+    if(this.isRules == true){
+      this.isFadeOut = true
+      setTimeout(() => {
+        this.isRules = false
+      },250)
+    }
   }
 
   pickOne(picked: string){

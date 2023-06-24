@@ -21,6 +21,7 @@ body {
         position: relative;
         
         .container {
+            animation: fadeIn .5s ease-in-out;
             width: 100%;
             min-height: 100vh;
             padding: 10% 5%;
@@ -30,6 +31,22 @@ body {
             flex-direction: column;
             justify-content: space-between;
             gap: 3rem;
+
+            @media screen and (min-width: 1020px){
+                padding: 5% 10%;
+            }
+        }
+
+        .container.rules {
+            position: relative;
+            filter: blur(1px);
+
+            &::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: #2222226e;
+            }
         }
     }
 }

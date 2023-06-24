@@ -1,7 +1,14 @@
-<div class="rules">
-    <h1>RULES</h1>
-    <img src="assets/images/image-rules.svg" alt="">
-    <div (click)="this.service.toggleRules()">
+<div class="rules" [ngClass]="{'fade-out': this.service.isFadeOut}">
+    <div class="rules-header">
+        <h1>RULES</h1>
+        <div class="close-top" (click)="this.service.toggleRules()">
+            <img src="assets/images/icon-close.svg" alt="">
+        </div>
+    </div>
+    <div class="img">
+        <img src="assets/images/image-rules.svg" alt="">
+    </div>
+    <div class="close" (click)="this.service.toggleRules()">
         <img src="assets/images/icon-close.svg" alt="">
     </div>
 </div>

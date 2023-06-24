@@ -4,15 +4,25 @@
 
 .header {
     width: 100%;
+    max-width: 700px;
+    margin-inline: auto;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     border: 3px solid $Header-Outline;
     border-radius: $border-radius;
 
+    @media screen and (min-width: 700px){
+       padding: 2rem;
+    }
+
     .logo {
         width: 40%;
         scale: .7;
+
+        @media screen and (min-width: 700px){
+            scale: .9;
+        }
     }
 
     .score {
@@ -24,6 +34,13 @@
         justify-content: center;
         align-items: center;
         border-radius: calc($border-radius / 2) ;
+        padding-inline: .5rem;
+        
+        @media screen and (min-width: 700px){
+            scale: 1;
+            min-width: 0;
+            padding-inline: 1rem;
+        }
 
         &-text{
             color: $Score-Text;
@@ -37,5 +54,6 @@
            font-weight: 700;
            margin-top: -.2rem;
         }
+
     }
 }
