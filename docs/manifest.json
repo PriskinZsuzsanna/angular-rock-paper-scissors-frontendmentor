@@ -1,6 +1,6 @@
 {
     "name": "Rock Paper Scissors",
-    "start_url": "/",
+    "start_url": "/angular-rock-paper-scissors-frontendmentor/",
     "orientation": "any",
     "scope": "/",
     "display": "standalone"
