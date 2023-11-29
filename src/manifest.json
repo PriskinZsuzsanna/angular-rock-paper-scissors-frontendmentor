@@ -5,7 +5,7 @@
     "scope": "/angular-rock-paper-scissors-frontendmentor/",
     "display": "standalone",
     "short_name": "Rock Paper Scissors",
-    "theme-color": "#834fe3",
+    "theme-color": "#5771f5",
     "background_color": "#3b4363",
     "icons": [
         {
